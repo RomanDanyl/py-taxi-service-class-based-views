@@ -9,7 +9,7 @@
 <h3>Cars driven by {{ driver.username }}</h3>
 <ul>
     {% for car in driver.cars.all %}
-    <li>{{ car.model }} ({{ car.manufacturer.name }})</li>
+    <li>{{ car.model }} ({{ car.manufacturer.name }}, {{ car.manufacturer.country }})</li>
     {% endfor %}
 </ul>
 {% endblock %}
